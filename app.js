@@ -14,6 +14,10 @@ app.listen(port, () => {
   console.log("The server started on port "+port+" !!!!!!");
 });
 
+app.get('/'),(req, res)=>{
+  res.send('Funciona')
+}
+
 app.post("/sendmail", (req, res) => {
   console.log("Request came");
   let form = req.body;
