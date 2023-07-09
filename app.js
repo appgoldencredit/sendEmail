@@ -7,7 +7,11 @@ const details = require("./details.json");
 const port=process.env.port || 3000;
 
 const app = express();
-app.use(cors({ origin: "*" }));
+const corsOptions = {
+  origin: 'http://199.36.158.100', // Reemplaza con la IP que deseas permitir
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.listen(port, () => {
