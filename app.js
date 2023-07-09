@@ -8,7 +8,7 @@ const port=process.env.port || 3000;
 
 const app = express();
 const corsOptions = {
-  origin: 'http://199.36.158.100', // Reemplaza con la IP que deseas permitir
+  origin: 'https://goldencredit.co', // Reemplaza con la IP que deseas permitir
 };
 
 app.use(cors(corsOptions));
